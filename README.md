@@ -2,12 +2,12 @@
 
 # Overview
 An ESP32 based smart parking system featuring:
--RFID based gate access control
--IR sensor slot occupancy detction
--LCD status display (Number of slots available)
--MPU6050 tamper detection
--ESP32-CAM live monitoring 
--Blynk IoT dahsboard
+- RFID based gate access control
+- IR sensor slot occupancy detction
+- LCD status display (Number of slots available)
+- MPU6050 tamper detection
+- ESP32-CAM live monitoring 
+- Blynk IoT dahsboard
 
 # Team Members
 - Member 1 - [Thanusha] - 
