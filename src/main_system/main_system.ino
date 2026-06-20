@@ -141,7 +141,7 @@ void loop() {
           updateLCD();
         }
       } else {
-        triggerAlarm("Unauthorized Card!");
+        triggerAlarm("Unauthorized Card !!!");
       }
     }
   }
