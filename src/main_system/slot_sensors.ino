@@ -26,3 +26,13 @@ int countAvailable() {
   }
   return count;
 }
+
+// ── UPDATE LEDs ───────────────────────────────────────────
+void updateLEDs() {
+  digitalWrite(GLED1, slotOccupied[0] ? LOW : HIGH);
+  digitalWrite(RLED1, slotOccupied[0] ? HIGH : LOW);
+  digitalWrite(GLED2, slotOccupied[1] ? LOW : HIGH);
+  digitalWrite(RLED2, slotOccupied[1] ? HIGH : LOW);
+  digitalWrite(GLED3, slotOccupied[2] ? LOW : HIGH);
+  digitalWrite(RLED3, slotOccupied[2] ? HIGH : LOW);
+}
