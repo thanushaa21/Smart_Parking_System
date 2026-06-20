@@ -36,3 +36,20 @@ void updateLEDs() {
   digitalWrite(GLED3, slotOccupied[2] ? LOW : HIGH);
   digitalWrite(RLED3, slotOccupied[2] ? HIGH : LOW);
 }
+
+// ── UPDATE LCD ────────────────────────────────────────────
+void updateLCD() {
+  int available = countAvailable();
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Available: ");
+  lcd.print(available);
+  lcd.print("/3");
+  lcd.setCursor(0, 1);
+  lcd.print("S1:");
+  lcd.print(slotOccupied[0] ? "X" : "O");
+  lcd.print(" S2:");
+  lcd.print(slotOccupied[1] ? "X" : "O");
+  lcd.print(" S3:");
+  lcd.print(slotOccupied[2] ? "X" : "O");
+}
