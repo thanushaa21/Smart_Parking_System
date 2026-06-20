@@ -1,6 +1,6 @@
 # Smart_Parking_System
 
-#Overview
+# Overview
 An ESP32 based smart parking system featuring:
 -RFID based gate access control
 -IR sensor slot occupancy detction
